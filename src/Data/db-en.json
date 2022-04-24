@@ -1,0 +1,887 @@
+{
+  "users": [
+    {
+      "email": "sherif@yahoo.com",
+      "password": "س_شساقشب12",
+      "userName": "sherif",
+      "lastname": "ashraf",
+      "id": 1
+    },
+    {
+      "email": "sherif@yahoo.com",
+      "password": "0123456789",
+      "userName": "ashraf",
+      "lastname": "sherif",
+      "phone": "011129706441",
+      "id": 2
+    },
+    {
+      "email": "sherif@yahoo.com",
+      "password": "0123456789",
+      "userName": "sherif",
+      "lastname": "ashraf",
+      "phone": "011297064441",
+      "id": 3
+    },
+    {
+      "email": "dasdsadasd2@gad.com",
+      "password": "0123456789",
+      "userName": "sherif",
+      "lastname": "ashraf",
+      "phone": "0112 970 6441",
+      "id": 4
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      "price": 109.95,
+      "del": 500,
+      "currency": "جنيه",
+      "details": "ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16",
+      "category": "men's clothing",
+      "image": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/37/891052/1.jpg?6254",
+      "rating": 1750,
+      "buy": "مشتري",
+      "quantity": 1,
+      "images": [
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/99/373342/1.jpg?4927"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/165012/1.jpg?0644"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/37/891052/1.jpg?6254"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      "price": 22.3,
+      "currency": "جنيه",
+      "del": 500,
+      "category": "men's clothing",
+      "image": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646",
+      "rating": 1750,
+      "buy": "مشتري",
+      "quantity": 1,
+      "details": "ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16",
+      "images": [
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/99/373342/1.jpg?4927"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/165012/1.jpg?0644"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/37/891052/1.jpg?6254"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      "price": 55.99,
+      "currency": "جنيه",
+      "category": "men's clothing",
+      "del": 500,
+      "image": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/165012/1.jpg?0644",
+      "rating": 1750,
+      "details": "ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16",
+      "buy": "مشتري",
+      "quantity": 1,
+      "images": [
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/99/373342/1.jpg?4927"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/165012/1.jpg?0644"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/37/891052/1.jpg?6254"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      "price": 55.99,
+      "category": "men's clothing",
+      "image": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/62/49729/1.jpg?0309",
+      "details": "ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16",
+      "rating": 1750,
+      "buy": "مشتري",
+      "currency": "جنيه",
+      "quantity": 1,
+      "images": [
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/99/373342/1.jpg?4927"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/165012/1.jpg?0644"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/37/891052/1.jpg?6254"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        }
+      ]
+    }
+  ],
+  "vegtabiles": [
+    {
+      "id": 1,
+      "title": "CARROTS",
+      "size": "125g",
+      "quantity": 0,
+      "price": 122,
+      "img": "https://alyan.sa/wp-content/uploads/2020/11/1519672422-carrots.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Apple",
+      "size": "500g",
+      "quantity": 0,
+      "price": 122,
+      "img": "https://www.collinsdictionary.com/images/full/apple_158989157.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Oranges",
+      "size": "6 pac",
+      "quantity": 0,
+      "price": 122,
+      "img": "https://www.halegroves.com/images/xl/buy-navel-oranges-online-123020.jpg?v=100009971701-2"
+    },
+    {
+      "id": 4,
+      "title": "Oranges",
+      "size": "6 pac",
+      "quantity": 0,
+      "price": 122,
+      "img": "https://www.halegroves.com/images/xl/buy-navel-oranges-online-123020.jpg?v=100009971701-2"
+    },
+    {
+      "id": 5,
+      "title": "kewi",
+      "size": "5 pac",
+      "quantity": 0,
+      "price": 122,
+      "img": "https://pbs.twimg.com/profile_images/902927795210379264/k1_S7ptf_400x400.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Pinapple",
+      "size": "5 pac",
+      "quantity": 0,
+      "price": 122,
+      "img": "https://sc04.alicdn.com/kf/U30c446d7c6f64fa8a814f74577f3cf420.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Broccoli",
+      "size": "100g",
+      "quantity": 0,
+      "price": 122,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYrbcQ5snui5QP89kIjMeQUmAfhuy4oyNIwQ&usqp=CAU"
+    },
+    {
+      "id": 8,
+      "title": "Red Chilies",
+      "size": "50g",
+      "quantity": 0,
+      "img": "https://www.veggycation.com.au/siteassets/veggycationvegetable/chillies-red.jpg"
+    }
+  ],
+  "laptops": [
+    {
+      "img": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/99/440052/1.jpg?1430",
+      "id": 1,
+      "title": "Backpacks Boys Backpack Loptop Backpack For Men USB-Black",
+      "price": "76.00"
+    },
+    {
+      "img": "https://eg.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/00/413442/1.jpg?3526",
+      "id": 2,
+      "title": "TAT Casual Printed Laptop Sleeve Multicolor 15-15.6 Inch",
+      "price": "76.00"
+    },
+    {
+      "img": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/57/592062/1.jpg?2491",
+      "id": 3,
+      "title": "MEINAILI Nylon Laptop Backpack With USB Charging Port - 15.6-inch - Dark Blue/Black",
+      "price": "76.00"
+    },
+    {
+      "img": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/09/879932/1.jpg?5456",
+      "id": 4,
+      "title": "Backpacks Boys Backpack Loptop Backpack For Men Usb-Black",
+      "price": "276.00"
+    },
+    {
+      "img": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/53/092532/1.jpg?4287",
+      "id": 5,
+      "title": "DELL G15 5511 Gaming Laptop - Intel Core I7-11800H - 16GB RAM - 512GB SSD - NVIDIA GeForce RTX 3050 4GB -15.6 Inch FHD 120Hz Display - Ubuntu - DARK SHADOW GREY",
+      "price": "276.00"
+    },
+    {
+      "img": "https://eg.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/00/413442/1.jpg?3526",
+      "id": 2,
+      "title": "TAT Casual Printed Laptop Sleeve Multicolor 15-15.6 Inch",
+      "price": "76.00"
+    },
+    {
+      "img": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/57/592062/1.jpg?2491",
+      "id": 3,
+      "title": "MEINAILI Nylon Laptop Backpack With USB Charging Port - 15.6-inch - Dark Blue/Black",
+      "price": "76.00"
+    },
+    {
+      "img": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/09/879932/1.jpg?5456",
+      "id": 4,
+      "title": "Backpacks Boys Backpack Loptop Backpack For Men Usb-Black",
+      "price": "276.00"
+    },
+    {
+      "img": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/53/092532/1.jpg?4287",
+      "id": 5,
+      "title": "DELL G15 5511 Gaming Laptop - Intel Core I7-11800H - 16GB RAM - 512GB SSD - NVIDIA GeForce RTX 3050 4GB -15.6 Inch FHD 120Hz Display - Ubuntu - DARK SHADOW GREY",
+      "price": "276.00"
+    }
+  ],
+  "api": [
+    {
+      "page": 1,
+      "current_page": 1,
+      "data": [
+        {
+          "img": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/61/721932/1.jpg?0367",
+          "id": 1,
+          "title": "Backpacks Boys Backpack Loptop Backpack For Men USB-Black",
+          "price": "76.00"
+        },
+        {
+          "img": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/43/122461/1.jpg?7518",
+          "id": 2,
+          "title": "TAT Casual Printed Laptop Sleeve Multicolor 15-15.6 Inch",
+          "price": "76.00"
+        },
+        {
+          "img": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/33/899212/1.jpg?0346",
+          "id": 3,
+          "title": "MEINAILI Nylon Laptop Backpack With USB Charging Port - 15.6-inch - Dark Blue/Black",
+          "price": "76.00"
+        },
+        {
+          "img": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/09/879932/1.jpg?5456",
+          "id": 4,
+          "title": "Backpacks Boys Backpack Loptop Backpack For Men Usb-Black",
+          "price": "276.00"
+        }
+      ],
+      "first_page_url": "http://localhost:5000/api?page=1",
+      "form": 1,
+      "last_page": 3,
+      "last_page_url": "http://localhost:5000/api?page=3",
+      "next_page_url": "http://localhost:5000/api?page=2",
+      "path": "http://localhost:5000/api/",
+      "per_page": 1,
+      "prev_page_url": null,
+      "to": 1,
+      "total": 3
+    },
+    {
+      "page": 2,
+      "current_page": 1,
+      "data": [
+        {
+          "img": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/61/721932/1.jpg?0367",
+          "id": 1,
+          "title": "Backpacks Boys Backpack Loptop Backpack For Men USB-Black",
+          "price": "76.00"
+        },
+        {
+          "img": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/43/122461/1.jpg?7518",
+          "id": 2,
+          "title": "TAT Casual Printed Laptop Sleeve Multicolor 15-15.6 Inch",
+          "price": "76.00"
+        },
+        {
+          "img": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/33/899212/1.jpg?0346",
+          "id": 3,
+          "title": "MEINAILI Nylon Laptop Backpack With USB Charging Port - 15.6-inch - Dark Blue/Black",
+          "price": "76.00"
+        },
+        {
+          "img": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/09/879932/1.jpg?5456",
+          "id": 4,
+          "title": "Backpacks Boys Backpack Loptop Backpack For Men Usb-Black",
+          "price": "276.00"
+        }
+      ],
+      "first_page_url": "http://localhost:5000/api?page=1",
+      "form": 1,
+      "last_page": 3,
+      "last_page_url": "http://localhost:5000/api?page=3",
+      "next_page_url": "http://localhost:5000/api?page=2",
+      "path": "http://localhost:5000/api/",
+      "per_page": 1,
+      "prev_page_url": null,
+      "to": 1,
+      "total": 3
+    }
+  ],
+  "drink": [
+    {
+      "id": 1,
+      "title": "كوكاكولا",
+      "size": "1",
+      "price": 122,
+      "details": "ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16",
+      "category": "vegtabiles",
+      "quantity": 0,
+      "img": "https://www.water-technology.net/wp-content/uploads/sites/28/2017/12/1-coca-cola-bottle.jpg",
+      "images": [
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/99/373342/1.jpg?4927"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/165012/1.jpg?0644"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/37/891052/1.jpg?6254"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "بيبسي",
+      "size": "500g",
+      "quantity": 0,
+      "price": 122,
+      "img": "https://cdnprod.mafretailproxy.com/sys-master-root/he9/hd8/17543283703838/30203_main.jpg_480Wx480H",
+      "category": "vegtabiles",
+      "details": "ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16",
+      "images": [
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/99/373342/1.jpg?4927"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/165012/1.jpg?0644"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/37/891052/1.jpg?6254"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "ميرندا برتقان",
+      "size": "1 كيلو",
+      "quantity": 0,
+      "price": 122,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGTxUJk3dP5pnVkExV6vU_i1ussxfjJJ3VLQ&usqp=CAU",
+      "category": "vegtabiles",
+      "details": "ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16",
+      "images": [
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/99/373342/1.jpg?4927"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/165012/1.jpg?0644"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/37/891052/1.jpg?6254"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "ميرندا تفاح",
+      "size": "6 pac",
+      "quantity": 0,
+      "price": 122,
+      "img": "https://cdninshaee.azureedge.net/media/assets/uploads/item/14228/f115931749e5d8a268050a45d8a44303.jpg",
+      "category": "vegtabiles",
+      "details": "ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16",
+      "images": [
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/99/373342/1.jpg?4927"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/165012/1.jpg?0644"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/37/891052/1.jpg?6254"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "ميرندا ليمون",
+      "size": "5 pac",
+      "quantity": 0,
+      "price": 122,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDsKjrGRCO57NJ30kWBENzH0c-k93xgly8EQ&usqp=CAU",
+      "category": "vegtabiles",
+      "details": "ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16",
+      "images": [
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/99/373342/1.jpg?4927"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/165012/1.jpg?0644"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/37/891052/1.jpg?6254"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "ميرندا توت",
+      "size": "5 pac",
+      "quantity": 0,
+      "price": 122,
+      "img": "https://i0.wp.com/emaratihyper.com/wp-content/uploads/2021/02/2-.jpg?resize=300%2C300&ssl=1",
+      "category": "vegtabiles",
+      "details": "ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16",
+      "images": [
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/99/373342/1.jpg?4927"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/165012/1.jpg?0644"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/37/891052/1.jpg?6254"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "عصير تفاح",
+      "size": "100g",
+      "quantity": 0,
+      "price": 122,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdxqNg1KcKu6H4e6lAzttGa_mwbutWhw2i6IG0WxHxzxzr1kCj4B473pz22BMVi8WZL_4&usqp=CAU",
+      "category": "vegtabiles",
+      "details": "ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16",
+      "images": [
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/99/373342/1.jpg?4927"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/165012/1.jpg?0644"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/37/891052/1.jpg?6254"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "عصير مانجا",
+      "size": "50g",
+      "quantity": 0,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF5S5FwKD0s_gwF29npquLGwbt7ussAiTvqA&usqp=CAU",
+      "category": "vegtabiles",
+      "details": "ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16",
+      "images": [
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/99/373342/1.jpg?4927"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/165012/1.jpg?0644"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/37/891052/1.jpg?6254"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "عصير تفاح",
+      "size": "125g",
+      "price": 122,
+      "details": "ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16",
+      "category": "vegtabiles",
+      "quantity": 0,
+      "img": "https://spinneys-egypt.com/cache/large/product/5623/KdqAHlOMdSUqJmxQLOEkNHSDwNZ91J7DzPxl3QW9.jpg",
+      "images": [
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/99/373342/1.jpg?4927"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/165012/1.jpg?0644"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/37/891052/1.jpg?6254"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "كوكاكولا",
+      "size": "1",
+      "price": 122,
+      "details": "ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16",
+      "category": "vegtabiles",
+      "quantity": 0,
+      "img": "https://www.water-technology.net/wp-content/uploads/sites/28/2017/12/1-coca-cola-bottle.jpg",
+      "images": [
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/99/373342/1.jpg?4927"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/165012/1.jpg?0644"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/37/891052/1.jpg?6254"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "بيبسي",
+      "size": "500g",
+      "quantity": 0,
+      "price": 122,
+      "img": "https://cdnprod.mafretailproxy.com/sys-master-root/he9/hd8/17543283703838/30203_main.jpg_480Wx480H",
+      "category": "vegtabiles",
+      "details": "ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16",
+      "images": [
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/99/373342/1.jpg?4927"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/165012/1.jpg?0644"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/37/891052/1.jpg?6254"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "ميرندا برتقان",
+      "size": "1 كيلو",
+      "quantity": 0,
+      "price": 122,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGTxUJk3dP5pnVkExV6vU_i1ussxfjJJ3VLQ&usqp=CAU",
+      "category": "vegtabiles",
+      "details": "ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16",
+      "images": [
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/99/373342/1.jpg?4927"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/165012/1.jpg?0644"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/37/891052/1.jpg?6254"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "ميرندا تفاح",
+      "size": "6 pac",
+      "quantity": 0,
+      "price": 122,
+      "img": "https://cdninshaee.azureedge.net/media/assets/uploads/item/14228/f115931749e5d8a268050a45d8a44303.jpg",
+      "category": "vegtabiles",
+      "details": "ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16",
+      "images": [
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/99/373342/1.jpg?4927"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/165012/1.jpg?0644"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/37/891052/1.jpg?6254"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "ميرندا ليمون",
+      "size": "5 pac",
+      "quantity": 0,
+      "price": 122,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDsKjrGRCO57NJ30kWBENzH0c-k93xgly8EQ&usqp=CAU",
+      "category": "vegtabiles",
+      "details": "ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16",
+      "images": [
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/99/373342/1.jpg?4927"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/165012/1.jpg?0644"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/37/891052/1.jpg?6254"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "ميرندا توت",
+      "size": "5 pac",
+      "quantity": 0,
+      "price": 122,
+      "img": "https://i0.wp.com/emaratihyper.com/wp-content/uploads/2021/02/2-.jpg?resize=300%2C300&ssl=1",
+      "category": "vegtabiles",
+      "details": "ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16",
+      "images": [
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/99/373342/1.jpg?4927"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/165012/1.jpg?0644"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/37/891052/1.jpg?6254"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "عصير تفاح",
+      "size": "100g",
+      "quantity": 0,
+      "price": 122,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdxqNg1KcKu6H4e6lAzttGa_mwbutWhw2i6IG0WxHxzxzr1kCj4B473pz22BMVi8WZL_4&usqp=CAU",
+      "category": "vegtabiles",
+      "details": "ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16",
+      "images": [
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/99/373342/1.jpg?4927"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/165012/1.jpg?0644"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/37/891052/1.jpg?6254"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "عصير مانجا",
+      "size": "50g",
+      "quantity": 0,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF5S5FwKD0s_gwF29npquLGwbt7ussAiTvqA&usqp=CAU",
+      "category": "vegtabiles",
+      "details": "ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16 ساعة ذكية من أورايمو موديل او اس 16",
+      "images": [
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/99/373342/1.jpg?4927"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/165012/1.jpg?0644"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/37/891052/1.jpg?6254"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        },
+        {
+          "src": "https://eg.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/46/100232/1.jpg?6646"
+        }
+      ]
+    }
+  ],
+  "collection": [
+    {
+      "title": "Golon 607-Classic Mini Electric Radio - Black + Free Mobile Holder Wood",
+      "id": 1,
+      "price": 199.0,
+      "firstPrice": 299.0,
+      "img": "https://eg.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/47/799891/1.jpg?5126",
+      "images": [
+        "https://eg.jumia.is/unsafe/fit-in/150x150/filters:fill(white)/product/47/799891/2.jpg?5126",
+        "https://eg.jumia.is/unsafe/fit-in/150x150/filters:fill(white)/product/47/799891/2.jpg?5126",
+        "https://eg.jumia.is/unsafe/fit-in/150x150/filters:fill(white)/product/47/799891/4.jpg?5126"
+      ]
+    },
+    {
+      "title": "Skyline HD-222 IV Mini HD Satellite Receiver",
+      "price": 199.0,
+      "firstPrice": 299.0,
+      "id": 2,
+      "img": "https://eg.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/07/524991/1.jpg?5303",
+      "images": [
+        "https://eg.jumia.is/unsafe/fit-in/150x150/filters:fill(white)/product/07/524991/1.jpg?5303",
+        "https://eg.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/07/524991/2.jpg?5304",
+        "https://eg.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/07/524991/3.jpg?5305",
+        "https://eg.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/07/524991/4.jpg?5305"
+      ]
+    },
+    {
+      "title": "Heaven S-3000 2.1 Channel Stereo Subwoofer System - Black",
+      "price": 629.1,
+      "firstPrice": 999.0,
+      "id": 2,
+      "img": "https://eg.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/78/602912/1.jpg?1651",
+      "images": [
+        "https://eg.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/78/602912/2.jpg?1651",
+        "https://eg.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/78/602912/3.jpg?1651",
+        "https://eg.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/78/602912/4.jpg?6480"
+      ]
+    },
+    {
+      "title": "Fox SA-K007 Wall Mount For 26 To 55-inch LED/LCD TV Screens",
+      "price": 37.8,
+      "firstPrice": 75.0,
+      "id": 3,
+      "img": "https://eg.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/86/825571/1.jpg?9445"
+    },
+    {
+      "title": "Skyline HD-222 IV Mini HD Satellite Receiver",
+      "price": 245.0,
+      "firstPrice": 280.0,
+      "id": 4,
+      "img": "https://eg.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/72/314561/1.jpg?1326",
+      "images": [
+        "https://eg.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/72/314561/2.jpg?1326",
+        "https://eg.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/72/314561/3.jpg?1326",
+        "https://eg.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/72/314561/4.jpg?1326"
+      ]
+    },
+    {
+      "title": "Samsung UA43T5300 - 43-inch Full HD Smart TV With Built-In Receiver",
+      "price": 6699.0,
+      "firstPrice": 7159.0,
+      "id": 5,
+      "img": "https://eg.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/72/314561/1.jpg?1326",
+      "images": [
+        "https://eg.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/38/760412/2.jpg?0543",
+        "https://eg.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/38/760412/3.jpg?0543"
+      ]
+    }
+  ]
+}
