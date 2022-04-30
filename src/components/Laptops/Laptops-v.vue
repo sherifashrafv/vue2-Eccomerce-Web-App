@@ -3,8 +3,8 @@
     <div class="container">
       <div class="row align-items-center g-3">
         <div class="col-12">
-          <div class="veg-heading mt-3">
-            <h1 class="text-uppercase mt-5 text-end text-black fw-bold">
+          <div class="veg-heading mt-3 bg-white p-3">
+            <h1 class="text-capitalize mt-5 text-end text-black fw-bold">
               {{ $t("laptops.title") }}
             </h1>
             <p class="descrption-head-veg my-4 text-end fs-6">
@@ -49,21 +49,21 @@
                 class="veg-card p-4 bg-white d-flex flex-column align-items-center justify-content-center"
               >
                 <div class="img-veg-card">
-                  <img :src="item.img" alt="" />
+                  <img :src="item.image" alt="" />
                 </div>
                 <div class="d-flex mt-2 w-100 flex-row justify-content-between">
                   <div>
-                    <h6>
-                      <strong>
-                        {{ item.title.slice(0, 15) }}
-                        <router-link
-                          :to="`/${$i18n.locale}/product/${item.id}`"
-                          class=""
-                        >
-                          ...
-                        </router-link>
-                      </strong>
-                    </h6>
+                    <router-link
+                      class="text-black"
+                      :to="`/${$i18n.locale}/laptop/${item.id}`"
+                    >
+                      <h6>
+                        <strong>
+                          {{ item.title.slice(0, 15) }}
+                          .....
+                        </strong>
+                      </h6>
+                    </router-link>
                   </div>
                   <div class="d-flex flex-row-reverse">
                     <h5>
@@ -94,7 +94,9 @@
                     </ul>
                   </div>
                   <div>
-                    <button class="btn btn-primary">Add To Cart</button>
+                    <button @click="addToCar(item)" class="btn btn-primary">
+                      Add To Cart
+                    </button>
                   </div>
                 </div>
               </div>
@@ -144,8 +146,15 @@
 
 <script>
 import axios from "axios";
+import { mapActions } from "vuex";
+
 export default {
-  name: "Meats-Vue",
+  name: "laptops-Vue",
+  metaInfo() {
+    return {
+      title: `${this.$t("routes.laptop")} - ${this.$t("routes.title")}`,
+    };
+  },
   data() {
     return {
       items: [],
@@ -159,6 +168,8 @@ export default {
   },
 
   methods: {
+    ...mapActions(["addToCart"]),
+
     loadPressRelease() {
       axios
         .get(`laptops`)
@@ -168,6 +179,9 @@ export default {
         .finally(() => {
           this.loading = false;
         });
+    },
+    addToCar(prod) {
+      this.addToCart(prod);
     },
   },
   components: {},

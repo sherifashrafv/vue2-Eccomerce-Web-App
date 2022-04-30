@@ -5,20 +5,35 @@
         <!-- Free Shipping Nationwide  -->
         <div class="col-12 p-0">
           <div class="img-banner-electro bg-white rounded mt-3 p-2 w-100">
-            <div class="imag-banner-electro-img"></div>
+            <div v-if="$i18n.locale === 'ar'" class="imag-banner-electro-img">
+              <img
+                class="w-100"
+                src="../../assets/Electorincs/سينما ف بيتك.png"
+                alt=""
+              />
+            </div>
+            <div v-else class="imag-banner-electro-img">
+              <img
+                class="w-100"
+                src="../../assets/Electorincs/1152x252.png"
+                alt=""
+              />
+            </div>
           </div>
           <div
             class="show-all-tab p-3 bg-tabs my-3 d-flex flex-row justify-content-between"
           >
             <div>
-              <h5>Free Shipping Nationwide | On orders above 250EGP</h5>
+              <h5>
+                <h5>{{ $t("moblieAndTablets.bgTitle") }}</h5>
+              </h5>
             </div>
             <div>
               <h5>
                 <router-link
                   class="text-decoration-none text-uppercase text-black"
                   :to="{ name: 'SeeAll' }"
-                  >See All
+                  >{{ $t("moblieAndTablets.bgLink") }}
                   <i class="fa-solid fa-chevron-right"></i>
                 </router-link>
               </h5>
@@ -37,10 +52,10 @@
           >
             <router-link
               class="text-black"
-              :to="`/${$i18n.locale}/product/${item.id}`"
+              :to="`/${$i18n.locale}/elctro/${item.id}`"
             >
               <div class="electro-image">
-                <img :src="item.img" alt="" />
+                <img :src="item.image" alt="" />
               </div>
               <p>
                 {{ item.title.slice(0, 35) }}
@@ -89,10 +104,10 @@
           >
             <router-link
               class="text-black"
-              :to="`/${$i18n.locale}/product/${item.id}`"
+              :to="`/${$i18n.locale}/elctro/${item.id}`"
             >
               <div class="electro-image">
-                <img :src="item.img" alt="" />
+                <img :src="item.image" alt="" />
               </div>
               <p>
                 {{ item.title.slice(0, 30) }}
@@ -110,7 +125,9 @@
         </VueSlickCarousel>
         <!-- end -->
         <div class="bg-white p-2 shadow-sm rounded mb-3">
-          <h1 class="text-center pb-3">Shop By Brand</h1>
+          <h1 class="text-center pb-3">
+            {{ $t("moblieAndTablets.shopByBrand") }}
+          </h1>
           <!-- banners -->
           <div class="icons-electro d-flex flex-row justify-content-between">
             <div class="">
@@ -147,6 +164,11 @@ import "vue-slick-carousel/dist/vue-slick-carousel.css";
 import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 export default {
   name: "Electro-vue",
+  metaInfo() {
+    return {
+      title: `${this.$t("routes.homeElctro")} - ${this.$t("routes.title")}`,
+    };
+  },
   components: {
     // Flickity,
     VueSlickCarousel,

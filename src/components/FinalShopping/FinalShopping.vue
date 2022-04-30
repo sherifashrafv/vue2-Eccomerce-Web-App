@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import UserNotFound from "./UserNotFound.vue";
+import UserNotFound from "../Login/Login.vue";
 export default {
   name: "final-shopping",
   data() {

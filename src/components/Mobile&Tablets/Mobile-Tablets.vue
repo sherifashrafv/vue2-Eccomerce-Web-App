@@ -4,20 +4,35 @@
       <div class="row">
         <div class="col-12">
           <div class="bg-white rounded mt-3 p-2 w-100">
-            <div class="imag-banner-mobile-img"></div>
+            <div v-if="$i18n.locale === 'ar'" class="imag-banner-mobile-img">
+              <img
+                class="w-100 rounded"
+                src="../../assets/Mobile&Tablet/mobile-ar.jpg"
+                alt=""
+              />
+            </div>
+            <div v-else class="imag-banner-mobile-img">
+              <img
+                class="w-100 rounded"
+                src="../../assets/Mobile&Tablet/mobile-en.jpg"
+                alt=""
+              />
+            </div>
           </div>
           <div
             class="show-all-tab p-3 bg-tabs-kids my-3 d-flex flex-row justify-content-between"
           >
             <div>
-              <h5>Free Shipping Nationwide | On orders above 250EGP</h5>
+              <h5>{{ $t("moblieAndTablets.bgTitle") }}</h5>
             </div>
             <div>
               <h5>
                 <router-link
                   class="text-decoration-none text-uppercase text-black"
-                  :to="{ name: 'SeeAll' }"
-                  >See All
+                  :to="{ path: 'AllProducts' }"
+                  @click.native="Up()"
+                >
+                  {{ $t("moblieAndTablets.bgLink") }}
                   <i class="fa-solid fa-chevron-right"></i>
                 </router-link>
               </h5>
@@ -35,10 +50,10 @@
             >
               <router-link
                 class="text-black"
-                :to="`/${$i18n.locale}/product/${item.id}`"
+                :to="`/${$i18n.locale}/tablet/${item.id}`"
               >
                 <div class="electro-image">
-                  <img :src="item.img" alt="" />
+                  <img :src="item.image" alt="" />
                 </div>
                 <p>
                   {{ item.title.slice(0, 35) }}
@@ -59,17 +74,19 @@
         </div>
         <div class="col-12">
           <div
-            class="show-all-tab p-3 bg-tabs-bueaty-2 my-3 d-flex flex-row justify-content-between"
+            class="show-all-tab p-3 bg-tabs-kids my-3 d-flex flex-row justify-content-between"
           >
             <div>
-              <h5>Free Shipping Nationwide | On orders above 250EGP</h5>
+              <h5>{{ $t("moblieAndTablets.bgTitle") }}</h5>
             </div>
             <div>
               <h5>
                 <router-link
                   class="text-decoration-none text-uppercase text-black"
-                  :to="{ name: 'SeeAll' }"
-                  >See All
+                  :to="{ path: 'AllProducts' }"
+                  @click.native="Up()"
+                >
+                  {{ $t("moblieAndTablets.bgLink") }}
                   <i class="fa-solid fa-chevron-right"></i>
                 </router-link>
               </h5>
@@ -87,10 +104,10 @@
             >
               <router-link
                 class="text-black"
-                :to="`/${$i18n.locale}/product/${item.id}`"
+                :to="`/${$i18n.locale}/mobile/${item.id}`"
               >
                 <div class="electro-image">
-                  <img :src="item.img" alt="" />
+                  <img :src="item.image" alt="" />
                 </div>
                 <p>
                   {{ item.title.slice(0, 35) }}
@@ -110,44 +127,28 @@
           </VueSlickCarousel>
         </div>
         <div class="bg-white p-2 shadow-sm rounded mb-3">
-          <h1 class="text-center pb-3">Shop By Brand</h1>
+          <h1 class="text-center pb-3">
+            {{ $t("moblieAndTablets.shopByBrand") }}
+          </h1>
           <!-- banners -->
-          <div class="icons-bueaty row gy-2">
-            <div class="col-2">
-              <img class="" src="../../assets/Kids/kids-1.png" alt="" />
+          <div class="icons-electro d-flex flex-row justify-content-between">
+            <div class="">
+              <img class="" src="../../assets/Electorincs/1.png" alt="" />
             </div>
-            <div class="col-2">
-              <img class="" src="../../assets/Kids/kids-2.png" alt="" />
+            <div class="">
+              <img class="" src="../../assets/Electorincs/2.png" alt="" />
             </div>
-            <div class="col-2">
-              <img class="" src="../../assets/Kids/kids-3.png" alt="" />
+            <div class="">
+              <img class="" src="../../assets/Electorincs/3.png" alt="" />
             </div>
-            <div class="col-2">
-              <img class="" src="../../assets/Kids/kids-4.png" alt="" />
+            <div class="">
+              <img class="" src="../../assets/Electorincs/4.png" alt="" />
             </div>
-            <div class="col-2">
-              <img class="" src="../../assets/Kids/kids-5.png" alt="" />
+            <div class="">
+              <img class="" src="../../assets/Electorincs/5.png" alt="" />
             </div>
-            <div class="col-2">
-              <img class="" src="../../assets/Kids/kids-6.png" alt="" />
-            </div>
-            <div class="col-2">
-              <img class="" src="../../assets/Kids/kids-7.png" alt="" />
-            </div>
-            <div class="col-2">
-              <img class="" src="../../assets/Kids/kids-8.png" alt="" />
-            </div>
-            <div class="col-2">
-              <img class="" src="../../assets/Kids/kids-9.png" alt="" />
-            </div>
-            <div class="col-2">
-              <img class="" src="../../assets/Kids/kids-10.png" alt="" />
-            </div>
-            <div class="col-2">
-              <img class="" src="../../assets/Kids/kids-11.png" alt="" />
-            </div>
-            <div class="col-2">
-              <img class="" src="../../assets/Kids/kids-5.png" alt="" />
+            <div class="">
+              <img class="" src="../../assets/Electorincs/6.png" alt="" />
             </div>
           </div>
         </div>
@@ -161,8 +162,14 @@ import axios from "axios";
 import VueSlickCarousel from "vue-slick-carousel";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
+import { mapActions } from "vuex";
 export default {
   name: "Health-Bueaty",
+  metaInfo() {
+    return {
+      title: `${this.$t("routes.mobile")} - ${this.$t("routes.title")}`,
+    };
+  },
   components: {
     // Flickity,
     VueSlickCarousel,
@@ -218,6 +225,7 @@ export default {
     this.getTablets();
   },
   methods: {
+    ...mapActions(["Up"]),
     getMobiles() {
       axios.get("mobile").then((res) => {
         this.mobiles = res.data;

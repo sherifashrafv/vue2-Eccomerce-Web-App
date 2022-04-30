@@ -10,7 +10,9 @@
     "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(js|vue)\" --locales \"./src/locales/**/*.json\""
   },
   "dependencies": {
+    "@appbaseio/reactivesearch-vue": "^1.16.0-alpha.49",
     "@fortawesome/fontawesome-free": "^6.1.0",
+    "@ocrv/vue-tailwind-pagination": "^0.0.4",
     "@popperjs/core": "^2.11.4",
     "axios": "^0.26.1",
     "bootstrap": "^5.1.3",
@@ -25,6 +27,7 @@
     "vue-i18n-bridge": "^9.2.0-beta.10",
     "vue-image-lightbox": "^7.2.0",
     "vue-lazyload": "^1.3.3",
+    "vue-meta": "^2.4.0",
     "vue-owl-carousel": "^2.0.3",
     "vue-paginate": "^3.6.0",
     "vue-phone-number-input": "^1.1.12",

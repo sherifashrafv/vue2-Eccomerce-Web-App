@@ -30,7 +30,7 @@ export default {
 <style scoped>
 .footer-custome {
   background: #22313f;
-  position: fixed;
+  /* position: fixed; */
   left: 0;
   width: 100% !important;
   bottom: 0;

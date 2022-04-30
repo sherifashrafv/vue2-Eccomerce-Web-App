@@ -126,19 +126,19 @@ export default {
     const search = localStorage.getItem("search-val");
     if (search) {
       this.search = JSON.parse(search);
-      console.log("true");
-      console.log(this.search.length);
+      // console.log(search);
+      // console.log(this.search);
     } else {
       console.log("no");
       this.redirectTo({ val: "Home" });
     }
-    await axios.get("/products").then((res) => (this.blogs = res.data));
+    await axios
+      .get("allProducts")
+      .then((res) => ((this.blogs = res.data), console.log(this.blogs)));
   },
   computed: {
     filter() {
-      return this.blogs.filter((product) =>
-        product.title.includes(this.search)
-      );
+      return this.blogs.filter((product) => (product.title = this.search));
     },
   },
   methods: {

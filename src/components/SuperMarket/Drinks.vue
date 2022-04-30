@@ -28,7 +28,7 @@
             class="veg-card p-4 bg-white d-flex flex-column align-items-center justify-content-center"
           >
             <div class="img-veg-card">
-              <img :src="item.img" alt="" />
+              <img :src="item.image" alt="" />
             </div>
             <div class="d-flex mt-2 w-100 flex-row justify-content-between">
               <div>
@@ -65,7 +65,9 @@
                 </ul>
               </div>
               <div>
-                <button class="btn btn-primary">Add To Cart</button>
+                <button @click="addToCart(item)" class="btn btn-primary">
+                  Add To Cart
+                </button>
               </div>
             </div>
           </div>
@@ -85,49 +87,12 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12">
-        <div
-          class="img-market w-100 my-5 d-flex flex-row justify-content-between align-items-center"
-        >
-          <div class="orginal-market-image">
-            <img
-              class="img-fluid"
-              src="../../assets/Makret/market2.jpg"
-              alt=""
-            />
-          </div>
-          <div class="market-body">
-            <h5 class="fw-bold text-black">
-              اسواق عمرو افندي تتميز دائما بالتنوع في المنتجات الاوربية والشرق
-              الاوسط استطلع عل المنتجات
-            </h5>
-            <p class="market-descr text-muted">
-              السوبر ماركت أو السوق المركزي هو مجمع أو مبنى متعدد الأقسام وقد
-              يكون متعدد الطوابق يتم فيه التسوق وبيع وشراء المواد الغذائية
-              والمواد المنزلية مثل: الأطعمة، والشراب، ومواد وأدوات الغسيل، كما
-              قد يحتوي على أقسام لبيع الأجهزة الإلكترونية والأدوات
-              وآلةالآلاتالكهربائية، وهي بذلك توفر الوقت والجهد المبذول في التردد
-              على مناطق وأماكن مختلفة للتسوق، وهناك بعض الأسواق المركزية (السوبر
-              ماركت) قد تحوي على أصناف مختلفة من المواد المذكورة سابقا. وتتميز
-              محلات وأسواق (السوبر ماركت) بكثرة عدد العاملين في مختلف الأقسام،
-              كما يلزم وجود زي موحد للعاملين حتى يتعرف عليهم الزبائن عندما
-              يطلبون المساعدة. وتقدم محلات وأسواق (السوبر ماركت) عروض الجملة على
-              البضائع والسلع الاستهلاكية، مثل: المواد الغذائية، مواد التنظيف،
-              والأسماك، وغيرها. وتتميز كذلك بحرية حركة وانتقال الزبائن للتسوق
-              بين أقسامها المنوعة وبدون ازعاج من جانب القائمين على المحل من
-              المساعدين وموظفي الأقسام وغيرهم. بالإضافة إلى مراعاة وجود مستوى
-              مرتفع من خدمة العملاء والزبائن مما يسهم في إقبال الناس للشراء من
-              هذه المجمعات التجارية.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
 <script>
+import { mapActions } from "vuex";
+
 import axios from "axios";
 export default {
   name: "Meats-Vue",
@@ -144,6 +109,8 @@ export default {
   },
 
   methods: {
+    ...mapActions(["addToCart"]),
+
     loadPressRelease() {
       axios
         .get(`drinks`)
@@ -153,6 +120,9 @@ export default {
         .finally(() => {
           this.loading = false;
         });
+    },
+    addToCar(prod) {
+      this.addToCart(prod);
     },
   },
 };

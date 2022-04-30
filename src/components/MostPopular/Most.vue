@@ -23,9 +23,9 @@
                 <router-link
                   @click.native="Up()"
                   :to="`/${$i18n.locale}/product/${product.id}`"
-                  class="text-decoration-none my-3"
+                  class="text-decoration-none my-3 product-title w-100"
                 >
-                  <div class="product-title text-black">
+                  <div class="text-black">
                     <h6>{{ product.title }}</h6>
                   </div>
                 </router-link>
@@ -51,9 +51,9 @@
                   class="price d-flex align-items-center flex-row align-self-end mt-2"
                 >
                   <span class="">{{ product.price }}</span>
-                  <h5 class="">
+                  <span class="">
                     {{ $t("currency") }}
-                  </h5>
+                  </span>
                 </div>
                 <button @click="addToCar(product)" class="btn btn-primary mt-3">
                   {{ $t("addToCart") }}
@@ -83,7 +83,6 @@ export default {
   },
   async mounted() {
     await axios.get("Products").then((res) => (this.products = res.data));
-    console.log(this.products);
   },
   methods: {
     ...mapActions(["addToCart"]),

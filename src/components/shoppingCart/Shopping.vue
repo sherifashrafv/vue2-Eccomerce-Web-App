@@ -1,5 +1,6 @@
 <template>
-  <!-- <div class="mt-5" v-if="basketCart.length > 0">
+  <div>
+    <!-- <div class="mt-5" v-if="basketCart.length > 0">
     <perfect-scrollbar>
       <div class="basket-table">
         <div class="container">
@@ -60,158 +61,174 @@
       </div>
     </div>
   </div> -->
-  <!--  -->
-  <div v-if="basketCart.length > 0" class="container mb-5">
-    <div class="row">
-      <div class="col-3 mt-3">
-        <div
-          class="full-price bg-white w-100 shadow-sm d-flex flex-column justify-content-between"
-        >
-          <div class="w-100">
-            <h6 class="border-bottom pb-3 fw-bold">ملخص سلة التسوق</h6>
-          </div>
-          <div class="mt-2 d-flex flex-row justify-content-between">
-            <div class="">
-              <h4>
-                {{ $t("currency") + Number(totalCount).toLocaleString() }}
-              </h4>
-            </div>
-            <div>الاجمالي</div>
-          </div>
-          <!-- Button trigger modal -->
-          <button
-            type="button"
-            class="btn btn-dark mt-4"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-          >
-            هل تريد اكمال الشراء ؟
-          </button>
+    <!--  -->
+
+    <div v-if="basketCart.length > 0" class="container mb-5">
+      <div
+        class="final-shopping-cart row flex-lg-row flex-md-column-reverse flex-sm-column-reverse"
+      >
+        <div class="col-lg-3 col-md-12 col-sm-12 mt-3">
           <div
-            class="my-3 d-flex flex-row justify-content-between align-items-center"
+            class="full-price bg-white w-100 shadow-sm d-flex flex-column justify-content-between"
           >
-            <div>
-              <h6>اجمالي عدد المنتجات</h6>
+            <div class="w-100">
+              <h6 class="border-bottom pb-3 fw-bold">
+                {{ $t("shopping-cart.all") }}
+              </h6>
             </div>
-            <div>
-              <h6>{{ basketCart.length }}</h6>
+            <div class="mt-2 d-flex flex-row justify-content-between">
+              <div class="">
+                <h4>
+                  {{ $t("currency") + Number(totalCount).toLocaleString() }}
+                </h4>
+              </div>
+              <div>{{ $t("shopping-cart.total") }}</div>
             </div>
-          </div>
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="exampleModal"
-            tabindex="-1"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">
-                    هل تريد شراء المنتجات
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  اذا ضغط علي نعم سيتم تحويلك الي صفحة اكمال االبيانتات الخاصة
-                  بك
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    لا
-                  </button>
-                  <button
-                    @click="redirectTo()"
-                    type="button"
-                    class="btn btn-primary"
-                  >
-                    نعم
-                  </button>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-dark mt-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              {{ $t("shopping-cart.completepurchase") }}
+            </button>
+            <div
+              class="my-3 d-flex flex-row justify-content-between align-items-center"
+            >
+              <div>
+                <h6>{{ $t("shopping-cart.totalproducts") }}</h6>
+              </div>
+              <div>
+                <h6>{{ basketCart.length }}</h6>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      هل تريد شراء المنتجات
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    اذا ضغط علي نعم سيتم تحويلك الي صفحة اكمال االبيانتات الخاصة
+                    بك
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      لا
+                    </button>
+                    <button
+                      @click="redirectTo()"
+                      type="button"
+                      class="btn btn-primary"
+                    >
+                      نعم
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-9 mt-3">
-        <div
-          class="basket-box p-3 d-flex flex-column justify-content-end rounded bg-white"
-        >
-          <div class="basket-title">
-            <h1 class="border-bottom pb-3">سلة التسوق</h1>
-          </div>
-
+        <div class="col-lg-9 col-md-12 col-sm-12 mt-3">
           <div
-            v-for="row in basketCart"
-            :key="row.id"
-            class="basket-card mb-3 border-top p-2"
+            class="basket-box p-3 d-flex flex-column justify-content-end rounded bg-white"
           >
-            <div class="my-3 d-flex flex-row justify-content-between">
-              <div class="price-product">
-                <h5>{{ $t("currency") }} {{ row.price }}</h5>
-              </div>
-              <div class="title-product-basket">
-                <h6>{{ row.title }}</h6>
-              </div>
-              <div class="image-product-and-title align-self-end">
-                <img :src="row.image" alt="" />
-              </div>
+            <div class="basket-title">
+              <h1 class="border-bottom pb-3">
+                {{ $t("shopping-cart.shoppingBasket") }}
+              </h1>
             </div>
-            <div class="d-flex flex-row justify-content-between">
-              <!-- incr-decrement -->
-              <div>
-                <ul
-                  class="d-flex align-self-start flex-row justify-content-between gap-3"
-                >
-                  <li
-                    id="decr"
-                    @click="decrement(row.id, row.quantity)"
-                    class="decr"
-                  >
-                    -
-                  </li>
 
-                  <li class="quantity">{{ row.quantity }}</li>
-                  <li @click="increment(row.id, row.quantity)" class="incr">
-                    +
-                  </li>
-                </ul>
-              </div>
-              <!-- end-incr & decrement -->
-
-              <!-- remove-product-->
-              <div
-                class="action-delete d-flex flex-row align-items-center gap-2"
-              >
-                <span @click="deletem(row, row.quantity)">ازالة</span>
-                <div class="delete-img">
-                  <img src="../../assets/Cart/delete.png" alt="" />
+            <div
+              v-for="row in basketCart"
+              :key="row.id"
+              class="basket-card mb-3 border-top p-2"
+            >
+              <div class="my-3 d-flex flex-row justify-content-between">
+                <div class="price-product">
+                  <h5>{{ $t("currency") }} {{ row.price }}</h5>
+                </div>
+                <div class="title-product-basket">
+                  <h6>{{ row.title }}</h6>
+                </div>
+                <div class="image-product-and-title align-self-end">
+                  <img :src="row.image" alt="" />
                 </div>
               </div>
-              <!-- end-remove -->
+              <div class="d-flex flex-row justify-content-between">
+                <!-- incr-decrement -->
+                <div>
+                  <ul
+                    class="d-flex align-self-start flex-row justify-content-between gap-3"
+                  >
+                    <li
+                      id="decr"
+                      @click="decrement(row.id, row.quantity)"
+                      class="decr"
+                    >
+                      -
+                    </li>
+
+                    <li class="quantity">{{ row.quantity }}</li>
+                    <li @click="increment(row.id, row.quantity)" class="incr">
+                      +
+                    </li>
+                  </ul>
+                </div>
+                <!-- end-incr & decrement -->
+
+                <!-- remove-product-->
+                <div
+                  class="action-delete d-flex flex-row align-items-center gap-2"
+                >
+                  <span @click="deletem(row, row.quantity)">{{
+                    $t("shopping-cart.delete")
+                  }}</span>
+                  <div class="delete-img">
+                    <img src="../../assets/Cart/delete.png" alt="" />
+                  </div>
+                </div>
+                <!-- end-remove -->
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div v-else class="m-5">
-    <div class="d-flex flex-column justify-content-center align-items-center">
-      <div>
-        <h2>{{ $t("shopping-empty") }}</h2>
-      </div>
-      <div>
-        <img src="../../assets/Cart/68b7acd6.png" alt="" />
+    <div v-else>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="d-flex flex-column text-center p-5 justify-content-center align-items-center"
+            >
+              <div class="">
+                <h1>{{ $t("shopping-cart.empty") }}</h1>
+              </div>
+              <img src="../../assets/Cart/68b7acd6.png" alt="" class="w-25" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -283,7 +300,9 @@ export default {
     redirectTo() {
       this.$router.push({ name: "shoppingFinal" });
       let model = document.querySelector(".modal-backdrop.fade.show");
-      model.classList.remove("show");
+      model.removeAttribute("class");
+      document.body.removeAttribute("class");
+      document.body.removeAttribute("style");
     },
   },
   data() {
@@ -337,5 +356,11 @@ export default {
 }
 .delete-img img {
   width: 100%;
+}
+.action-delete {
+  cursor: pointer;
+}
+.action-delete:hover {
+  color: #f68b1e;
 }
 </style>

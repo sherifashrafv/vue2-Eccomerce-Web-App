@@ -1,5 +1,5 @@
 <template>
-  <div class="header-custome p-5 w-auto">
+  <div class="header-custome p-5">
     <div class="container">
       <div class="row">
         <div class="d-flex flex-row justify-content-center">
@@ -7,9 +7,6 @@
             <h5>
               {{ $t("search-header.logo") }}
             </h5>
-            <span class="market">
-              {{ $t("search-header.span-logo") }}
-            </span>
           </router-link>
         </div>
       </div>
@@ -27,17 +24,10 @@ export default {
 }
 .logo h5 {
   font-size: 25px;
-  color: #1e8bc3;
+  color: white;
 }
 .logo {
   position: relative;
   text-align: center;
-}
-.logo span {
-  position: absolute;
-  top: 20px;
-  left: 34px;
-  color: white;
-  font-size: 23px;
 }
 </style>

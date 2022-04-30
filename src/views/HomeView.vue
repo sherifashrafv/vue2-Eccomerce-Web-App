@@ -24,6 +24,11 @@ export default {
     Content,
     FollowUs,
   },
+  metaInfo() {
+    return {
+      title: `${this.$t("routes.home")} - ${this.$t("routes.title")}`,
+    };
+  },
 };
 </script>
 <style scoped></style>

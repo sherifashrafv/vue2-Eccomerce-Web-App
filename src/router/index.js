@@ -1,8 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
-import routerSignUp from "../components/SignUp/routerSign.vue";
-import Sign from "../components/SignUp/SignUp.vue";
+import SignUp from "../components/SignUp/SignUp.vue";
 import Login from "../components/Login/Login.vue";
 import Settings from "../components/Settings/Setting.vue";
 import Edit from "../components/Edit/Edit.vue";
@@ -21,6 +20,14 @@ import HealthBueaty from "../components/Health&Bueaty/Health&Bueaty.vue";
 import Kids from "../components/Kids/Kids.vue";
 import MobileTablets from "../components/Mobile&Tablets/Mobile-Tablets.vue";
 import shoppingFinal from "../components/FinalShopping/FinalShopping.vue";
+import AllProducts from "../components/AllProducts/SeeAll.vue";
+import Others from "../components/Others/AllProducts.vue";
+import TabletProduct from "../components/Mobile&Tablets/tablet-product.vue";
+import MobileProduct from "../components/Mobile&Tablets/mobileProduct.vue";
+import ElectroId from "../components/HomeElctorinecs/ELctro-id.vue";
+import LaptopsId from "../components/Laptops/laptopProduct.vue";
+import KidsId from "../components/Kids/KidsProducts.vue";
+import AllProductId from "../components/AllProducts/SeeProductId.vue";
 import Error from "../views/Error.vue";
 import i18n from "../i18n";
 Vue.use(VueRouter);
@@ -50,6 +57,16 @@ const routes = [
         component: Search,
       },
       {
+        path: "AllProducts",
+        name: "AllProducts",
+        component: AllProducts,
+      },
+      {
+        path: "seeAll/:id",
+        name: "AllProductId",
+        component: AllProductId,
+      },
+      {
         name: "SuperMarkets",
         path: "SuperMarkets",
         component: SuperMarket,
@@ -69,6 +86,11 @@ const routes = [
         name: "Laptops&Elctorinecs",
         path: "Laptops&Elctorinecs",
         component: Laptops,
+      },
+      {
+        name: "Others",
+        path: "Others",
+        component: Others,
       },
 
       {
@@ -92,6 +114,42 @@ const routes = [
         component: MobileTablets,
       },
       {
+        path: "tablet/:id",
+        name: "tablet",
+        component: TabletProduct,
+      },
+      {
+        path: "mobile/:id",
+        name: "mobile",
+        component: MobileProduct,
+      },
+      {
+        path: "elctro/:id",
+        name: "elctro",
+        component: ElectroId,
+      },
+      {
+        path: "laptop/:id",
+        name: "laptop",
+        component: LaptopsId,
+      },
+      {
+        path: "elctro/:id",
+        name: "elctro",
+        component: ElectroId,
+      },
+      {
+        path: "kids/:id",
+        name: "kids",
+        component: KidsId,
+      },
+      {
+        path: "HomeElctorinecs/:id",
+        name: "mobile",
+        component: MobileProduct,
+      },
+
+      {
         name: "Kids",
         path: "Kids",
         component: Kids,
@@ -99,25 +157,12 @@ const routes = [
       {
         path: "SignUp",
         name: "SignUp",
-        component: routerSignUp,
-        children: [
-          {
-            name: "default",
-            path: "",
-            component: Sign,
-            meta: {
-              layout: "custome-layout",
-            },
-          },
-          {
-            name: "login",
-            path: `login`,
-            component: Login,
-            meta: {
-              layout: "custome-layout",
-            },
-          },
-        ],
+        component: SignUp,
+      },
+      {
+        path: "login",
+        name: "login",
+        component: Login,
       },
       {
         name: "Settings",

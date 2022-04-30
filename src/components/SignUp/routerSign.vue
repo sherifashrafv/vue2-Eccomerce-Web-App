@@ -13,8 +13,7 @@
               class="text-decoration-none fs-5 text-uppercase"
               exact
               :to="{ name: 'default' }"
-              >{{ $t("SignRouter.sign") }}</router-link
-            >
+            ></router-link>
           </li>
           <li>
             <router-link

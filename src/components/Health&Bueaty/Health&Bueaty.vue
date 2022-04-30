@@ -4,20 +4,34 @@
       <div class="row">
         <div class="col-12">
           <div class="img-banner-electro bg-white rounded mt-3 p-2 w-100">
-            <div class="imag-banner-bueaty-img"></div>
+            <div v-if="$i18n.locale === 'ar'" class="imag-banner-bueaty-img">
+              <img
+                class="w-100"
+                src="../../assets/Beauty/bueaty-ar.png"
+                alt=""
+              />
+            </div>
+            <div v-else class="imag-banner-bueaty-img">
+              <img
+                class="w-100"
+                src="../../assets/Beauty/bueaty-en.png"
+                alt=""
+              />
+            </div>
           </div>
           <div
             class="show-all-tab p-3 bg-tabs-bueaty-1 my-3 d-flex flex-row justify-content-between"
           >
             <div>
-              <h5>Free Shipping Nationwide | On orders above 250EGP</h5>
+              <h5>{{ $t("moblieAndTablets.bgTitle") }}</h5>
             </div>
             <div>
               <h5>
                 <router-link
                   class="text-decoration-none text-uppercase text-black"
                   :to="{ name: 'SeeAll' }"
-                  >See All
+                >
+                  {{ $t("moblieAndTablets.bgLink") }}
                   <i class="fa-solid fa-chevron-right"></i>
                 </router-link>
               </h5>
@@ -25,7 +39,7 @@
           </div>
           <VueSlickCarousel
             v-if="collection.length > 0"
-            class="p-0 mb-4"
+            class="p-0 mb-4 bg-white"
             v-bind="settings"
           >
             <div
@@ -35,10 +49,10 @@
             >
               <router-link
                 class="text-black"
-                :to="`/${$i18n.locale}/product/${item.id}`"
+                :to="`/${$i18n.locale}/elctro/${item.id}`"
               >
                 <div class="electro-image">
-                  <img :src="item.img" alt="" />
+                  <img :src="item.image" alt="" />
                 </div>
                 <p>
                   {{ item.title.slice(0, 35) }}
@@ -62,14 +76,15 @@
             class="show-all-tab p-3 bg-tabs-bueaty-2 my-3 d-flex flex-row justify-content-between"
           >
             <div>
-              <h5>Free Shipping Nationwide | On orders above 250EGP</h5>
+              <h5>{{ $t("moblieAndTablets.bgTitle") }}</h5>
             </div>
             <div>
               <h5>
                 <router-link
                   class="text-decoration-none text-uppercase text-black"
                   :to="{ name: 'SeeAll' }"
-                  >See All
+                >
+                  {{ $t("moblieAndTablets.bgLink") }}
                   <i class="fa-solid fa-chevron-right"></i>
                 </router-link>
               </h5>
@@ -77,7 +92,7 @@
           </div>
           <VueSlickCarousel
             v-if="collection.length > 0"
-            class="p-0 mb-4"
+            class="p-0 mb-4 bg-white"
             v-bind="settings"
           >
             <div
@@ -87,10 +102,10 @@
             >
               <router-link
                 class="text-black"
-                :to="`/${$i18n.locale}/product/${item.id}`"
+                :to="`/${$i18n.locale}/elctro/${item.id}`"
               >
                 <div class="electro-image">
-                  <img :src="item.img" alt="" />
+                  <img :src="item.image" alt="" />
                 </div>
                 <p>
                   {{ item.title.slice(0, 35) }}
@@ -110,90 +125,92 @@
           </VueSlickCarousel>
         </div>
         <div class="bg-white p-2 shadow-sm rounded mb-3">
-          <h1 class="text-center pb-3">Shop By Brand</h1>
+          <h1 class="text-center pb-3">
+            {{ $t("moblieAndTablets.shopByBrand") }}
+          </h1>
           <!-- banners -->
-          <div class="icons-bueaty row">
-            <div class="col-2">
+          <div class="icons-health d-flex flex-row justify-content-between">
+            <div class="">
               <img
                 class=""
                 src="../../assets/Beauty/bueaty-brand-1.png"
                 alt=""
               />
             </div>
-            <div class="col-2">
+            <div class="">
               <img
                 class=""
                 src="../../assets/Beauty/bueaty-brand-2.png"
                 alt=""
               />
             </div>
-            <div class="col-2">
+            <div class="">
               <img
                 class=""
                 src="../../assets/Beauty/bueaty-brand-3.png"
                 alt=""
               />
             </div>
-            <div class="col-2">
+            <div class="">
               <img
                 class=""
                 src="../../assets/Beauty/bueaty-brand-4.png"
                 alt=""
               />
             </div>
-            <div class="col-2">
+            <div class="">
               <img
                 class=""
                 src="../../assets/Beauty/bueaty-brand-5.png"
                 alt=""
               />
             </div>
-            <div class="col-2">
+            <div class="">
               <img
                 class=""
                 src="../../assets/Beauty/bueaty-brand-6.png"
                 alt=""
               />
             </div>
-            <div class="col-2">
+            <div class="">
               <img
                 class=""
                 src="../../assets/Beauty/bueaty-brand-7.png"
                 alt=""
               />
             </div>
-            <div class="col-2">
+            <div class="">
               <img
                 class=""
                 src="../../assets/Beauty/bueaty-brand-8.png"
                 alt=""
               />
             </div>
-            <div class="col-2">
+            <div class="">
               <img
                 class=""
                 src="../../assets/Beauty/bueaty-brand-9.png"
                 alt=""
               />
             </div>
-            <div class="col-2">
+            <div class="">
               <img
                 class=""
                 src="../../assets/Beauty/bueaty-brand-10.png"
                 alt=""
               />
             </div>
-            <div class="col-2">
+            <div class="">
               <img
                 class=""
                 src="../../assets/Beauty/bueaty-brand-11.png"
                 alt=""
               />
             </div>
-            <div class="col-2">
+            <div class="">
               <img
                 class=""
-                src="../../assets/Beauty/bueaty-brand-12.png"
+                src="../../assets/Beauty/bueaty-brand-11.png"
                 alt=""
               />
             </div>
@@ -211,6 +228,11 @@ import "vue-slick-carousel/dist/vue-slick-carousel.css";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
 export default {
   name: "Health-Bueaty",
+  metaInfo() {
+    return {
+      title: `${this.$t("routes.healthBueaty")} - ${this.$t("routes.title")}`,
+    };
+  },
   components: {
     // Flickity,
     VueSlickCarousel,
@@ -232,25 +254,27 @@ export default {
             breakpoint: 1024,
             settings: {
               slidesToShow: 2,
-              slidesToScroll: 3,
+              slidesToScroll: 1,
               infinite: true,
               dots: true,
+              arrows: false,
             },
           },
           {
             breakpoint: 600,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 1,
               slidesToScroll: 2,
               initialSlide: 2,
               infinite: true,
               dots: true,
+              arrows: false,
             },
           },
           {
             breakpoint: 480,
             settings: {
-              slidesToShow: 1,
+              slidesToShow: 2,
               slidesToScroll: 1,
               infinite: true,
               dots: true,

@@ -10,7 +10,7 @@
     "buttonsearch": "Serach",
     "logo": "Omar Afandy",
     "span-logo": "Markets",
-    "help": "Do You Need Help?"
+    "help": "Help?"
   },
   "Deleviery": {
     "repeat": "Repeat Your Product Again",
@@ -48,7 +48,7 @@
     },
     {
       "path": "Others",
-      "name": "Others.."
+      "name": "All Products"
     }
   ],
   "SignUp": {
@@ -73,7 +73,8 @@
     "example": "Countries ",
     "Submit": "Submit",
     "country": "CountryCode",
-    "enterPhone": "EnterYourPhone"
+    "enterPhone": "EnterYourPhone",
+    "userNotExist": "User Not Exist Please Register "
   },
   "bestSellers": {
     "title": "Best Sellers"
@@ -237,8 +238,28 @@
     }
   ],
   "signUp": {
-    "sigon": "Profile",
-    "signup": "LogOut"
+    "signin": "LogIn ",
+    "profile": "Profile",
+    "logout": "Log Out",
+    "Settings": "Settings",
+    "signUp": "Create Account",
+    "description": "Easily create your own account on Omar Afandy via email or via Easily create your own account on Omar Afandy via email or via Easily create your own account on Omar Afandy via email or via",
+    "signUpwithAccound": "Log In With Email",
+    "signUpwithFaceBook": "Log in with Facebook",
+    "email": "Email",
+    "password": "Password",
+    "rememberMe": "Reamember Me",
+    "forget": "Forget a Password ?",
+    "userName": "UserName",
+    "lastName": "LastName",
+    "aggree": "Agree To",
+    "terms": "the terms and conditions ",
+    "afterBr": "Omar Afandi Privacy and Cookie Notice",
+    "signUpToForm": "Sign UP",
+    "SignUpFaceBook": "SignUp With FaceBook",
+    "haveAccount": "Do You Have An Account ?",
+    "or": "Or",
+    "userNotExist": "User Not Exist Please Register "
   },
   "buyer": "buy this",
   "addToCart": "Add To Cart",
@@ -256,5 +277,50 @@
     "drinks": "Drinks",
     "fastFoods": "FastFoods",
     "dairyproducts": "Dairy products"
-  }
+  },
+  "routes": {
+    "home": "Home",
+    "superMarkets": "SuperMarket",
+    "mobile": "Mobile&Tablet",
+    "homeElctro": "Electronics",
+    "healthBueaty": "Health&Bueaty",
+    "title": "OmarAfandy",
+    "laptop": "Laptops&Electronics",
+    "kids": "Kids"
+  },
+  "superMarket": {
+    "title": "Fruits and vegetables",
+    "desription": "The supermarket or the central market is a complex or a multi-section building and may be multi-storey in which shopping, buying and selling food and household items such as: food, drink, washing materials and tools, and may also contain sections for the sale of electronic devices, tools and electrical machinery, which saves time and effort The effort is to visit different areas and places for shopping, and there are some supermarkets that may contain different types of the previously mentioned items. Supermarkets and shops are distinguished by the large number of workers in various departments, and a uniform for workers is required so that customers can recognize them when they ask for help. and progress",
+    "feetTitle": "Omar Effendi's markets are always distinguished by the diversity of European and Middle Eastern products. Explore the products",
+    "feetdescription": "The supermarket or the central market is a complex or a multi-section building and may be multi-storey in which shopping, buying and selling food and household items such as: food, drink, washing materials and tools, and may also contain sections for the sale of electronic devices, tools and electrical machinery, which saves time and effort The effort is to visit different areas and places for shopping, and there are some supermarkets that may contain different types of the previously mentioned items. Supermarkets and shops are distinguished by the large number of workers in various departments, and a uniform for workers is required so that customers can recognize them when they ask for help. and progress"
+  },
+  "moblieAndTablets": {
+    "bgTitle": "Free Shipping Nationwide | On orders above 250EGP",
+    "bgLink": "SEE ALL",
+    "shopByBrand": "Brands"
+  },
+  "shopping-cart": {
+    "empty": "Shopping Cart Is Empty",
+    "delete": "Delete",
+    "all": "Shopping Cart Summary",
+    "total": "Total Price",
+    "completepurchase": "Complete Purchase ?",
+    "totalproducts": "Total Products",
+    "shoppingBasket": "Shopping-Basket"
+  },
+  "laptops": {
+    "title": "Everything is new and modern in electronic devices Omar Effendi",
+    "desc": "Explore the new in Omar Effendi and see the wonderful mix of modern laptops that have high technologies at the lowest prices at all, and there is a guarantee with every device you will buy and gifts. Everything is available at Omar Effendi. The most important thing is customer satisfaction. Explore the new in Omar Effendi and see the wonderful mix of laptops The most important thing is customer satisfaction. Explore the new in Omar Effendi and see the wonderful mix of modern laptops that have high technologies at the lowest prices ever. Warranty with every device you will buy and gifts, everything is available at Omar Effendi, the most important thing is customer satisfaction",
+    "title2": "We have many laptops from all over the world",
+    "desc2": "A laptop is a laptop computer known as a notebook. It is a small computer that weighs mostly from 3 to 12 pounds and is designed so that one puts it in his room while it works, unlike the computer that is placed on the desk and leaves the laptop battery with which it can work for hours without needing any other electricity and on the contrary The desktop is also distinguished by a single connection of keys to the screen with the mouse. In the past years, with the increase in people's demand for it, its spread has increased dramatically, and this is due to its light weight, ease of use and maintenance, to the extent that its sales exceeded the sales of ordinary desktop computers."
+  },
+  "filter": [
+    "vegtabiles",
+    "fruits",
+    "men",
+    "elctro",
+    "women",
+    "fastfoods",
+    "dariymilks"
+  ]
 }

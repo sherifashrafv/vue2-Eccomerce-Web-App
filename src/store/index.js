@@ -6,7 +6,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     basketCart: [],
-    user: null,
+    user: true,
   },
   getters: {},
   mutations: {
@@ -92,6 +92,9 @@ export default new Vuex.Store({
     },
     delete: async ({ commit }, prod) => {
       await commit("deletex", prod);
+    },
+    Up: async () => {
+      window.scroll(0, 0);
     },
   },
   modules: {},

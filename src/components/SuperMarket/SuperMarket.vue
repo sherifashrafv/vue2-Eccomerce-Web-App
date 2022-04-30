@@ -5,27 +5,12 @@
         <div class="col-12">
           <div class="veg-heading mt-3">
             <div class="veg-title d-flex flex-row justify-content-end">
-              <div class="skew">
-                <h1 class="text-uppercase text-end">الفواكه والخضار</h1>
-              </div>
+              <h1 class="text-uppercase text-end">
+                {{ $t("superMarket.title") }}
+              </h1>
             </div>
             <p class="descrption-head-veg my-4 text-end">
-              السوبر ماركت أو السوق المركزي هو مجمع أو مبنى متعدد الأقسام وقد
-              يكون متعدد الطوابق يتم فيه التسوق وبيع وشراء المواد الغذائية
-              والمواد المنزلية مثل: الأطعمة، والشراب، ومواد وأدوات الغسيل، كما
-              قد يحتوي على أقسام لبيع الأجهزة الإلكترونية والأدوات
-              وآلةالآلاتالكهربائية، وهي بذلك توفر الوقت والجهد المبذول في التردد
-              على مناطق وأماكن مختلفة للتسوق، وهناك بعض الأسواق المركزية (السوبر
-              ماركت) قد تحوي على أصناف مختلفة من المواد المذكورة سابقا. وتتميز
-              محلات وأسواق (السوبر ماركت) بكثرة عدد العاملين في مختلف الأقسام،
-              كما يلزم وجود زي موحد للعاملين حتى يتعرف عليهم الزبائن عندما
-              يطلبون المساعدة. وتقدم محلات وأسواق (السوبر ماركت) عروض الجملة على
-              البضائع والسلع الاستهلاكية، مثل: المواد الغذائية، مواد التنظيف،
-              والأسماك، وغيرها. وتتميز كذلك بحرية حركة وانتقال الزبائن للتسوق
-              بين أقسامها المنوعة وبدون ازعاج من جانب القائمين على المحل من
-              المساعدين وموظفي الأقسام وغيرهم. بالإضافة إلى مراعاة وجود مستوى
-              مرتفع من خدمة العملاء والزبائن مما يسهم في إقبال الناس للشراء من
-              هذه المجمعات التجارية
+              {{ $t("superMarket.desription") }}
             </p>
           </div>
         </div>
@@ -125,8 +110,30 @@
           <router-view></router-view>
         </div>
       </div>
+      <div class="row">
+        <div class="col-12">
+          <div
+            class="img-market w-100 my-5 d-flex justify-content-between align-items-center"
+          >
+            <div class="orginal-market-image">
+              <img
+                class="img-fluid"
+                src="../../assets/Makret/market2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="market-body bg-white p-3 rounded">
+              <h5 class="fw-bold text-black">
+                {{ $t("superMarket.feetTitle") }}
+              </h5>
+              <p class="market-descr text-muted">
+                {{ $t("superMarket.desription") }}.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
     <!--  -->
   </div>
 </template>
@@ -158,7 +165,10 @@ export default {
         });
     },
   },
+  metaInfo() {
+    return {
+      title: `${this.$t("routes.superMarkets")} - ${this.$t("routes.title")}`,
+    };
+  },
 };
 </script>
-
-<style scoped></style>

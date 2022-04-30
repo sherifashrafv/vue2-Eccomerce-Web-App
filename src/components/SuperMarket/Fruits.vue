@@ -28,7 +28,7 @@
             class="veg-card p-4 bg-white d-flex flex-column align-items-center justify-content-center"
           >
             <div class="img-veg-card">
-              <img :src="item.img" alt="" />
+              <img :src="item.image" alt="" />
             </div>
             <div class="d-flex w-100 flex-row justify-content-between">
               <div>
@@ -57,7 +57,7 @@
             >
               <div>
                 <ul
-                  class="d-flex align-self-start flex-row justify-content-between gap-3"
+                  class="d-flex align-self-start flex-lg-row flex-md-column justify-content-between gap-3"
                 >
                   <li @click="rQuantity(item.id)" class="incr">-</li>
                   <li class="quantity">{{ item.quantity }}</li>
@@ -65,7 +65,10 @@
                 </ul>
               </div>
               <div>
-                <button @click="addToCart(item)" class="btn btn-primary">
+                <button
+                  @click="addToCart(item)"
+                  class="btn btn-primary custome-add-toCart"
+                >
                   {{ $t("addToCart") }}
                 </button>
               </div>
@@ -84,45 +87,6 @@
         <div>
           <paginate-links for="items" :limit="3" :show-step-links="true">
           </paginate-links>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <div
-          class="img-market w-100 my-5 d-flex flex-row justify-content-between align-items-center"
-        >
-          <div class="orginal-market-image">
-            <img
-              class="img-fluid"
-              src="../../assets/Makret/market2.jpg"
-              alt=""
-            />
-          </div>
-          <div class="market-body bg-white p-3 rounded">
-            <h5 class="fw-bold text-black">
-              اسواق عمرو افندي تتميز دائما بالتنوع في المنتجات الاوربية والشرق
-              الاوسط استطلع عل المنتجات
-            </h5>
-            <p class="market-descr text-muted">
-              السوبر ماركت أو السوق المركزي هو مجمع أو مبنى متعدد الأقسام وقد
-              يكون متعدد الطوابق يتم فيه التسوق وبيع وشراء المواد الغذائية
-              والمواد المنزلية مثل: الأطعمة، والشراب، ومواد وأدوات الغسيل، كما
-              قد يحتوي على أقسام لبيع الأجهزة الإلكترونية والأدوات
-              وآلةالآلاتالكهربائية، وهي بذلك توفر الوقت والجهد المبذول في التردد
-              على مناطق وأماكن مختلفة للتسوق، وهناك بعض الأسواق المركزية (السوبر
-              ماركت) قد تحوي على أصناف مختلفة من المواد المذكورة سابقا. وتتميز
-              محلات وأسواق (السوبر ماركت) بكثرة عدد العاملين في مختلف الأقسام،
-              كما يلزم وجود زي موحد للعاملين حتى يتعرف عليهم الزبائن عندما
-              يطلبون المساعدة. وتقدم محلات وأسواق (السوبر ماركت) عروض الجملة على
-              البضائع والسلع الاستهلاكية، مثل: المواد الغذائية، مواد التنظيف،
-              والأسماك، وغيرها. وتتميز كذلك بحرية حركة وانتقال الزبائن للتسوق
-              بين أقسامها المنوعة وبدون ازعاج من جانب القائمين على المحل من
-              المساعدين وموظفي الأقسام وغيرهم. بالإضافة إلى مراعاة وجود مستوى
-              مرتفع من خدمة العملاء والزبائن مما يسهم في إقبال الناس للشراء من
-              هذه المجمعات التجارية.
-            </p>
-          </div>
         </div>
       </div>
     </div>
@@ -147,7 +111,7 @@ export default {
   },
 
   methods: {
-    ...mapActions(["removeProduct", "aQuantity", "rQuantity"]),
+    ...mapActions(["removeProduct", "aQuantity", "rQuantity", "addToCart"]),
 
     loadPressRelease() {
       axios
@@ -164,6 +128,9 @@ export default {
     },
     aQuantity(idx) {
       this.aQuantity(idx);
+    },
+    addToCar(prod) {
+      this.addToCart(prod);
     },
   },
 };

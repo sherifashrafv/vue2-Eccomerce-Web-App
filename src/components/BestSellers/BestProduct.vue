@@ -23,7 +23,7 @@
                 <router-link
                   @click.native="Up()"
                   :to="`/${$i18n.locale}/product/${product.id}`"
-                  class="text-decoration-none my-3"
+                  class="text-decoration-none my-3 product-title w-100"
                 >
                   <div class="product-title text-black">
                     <h6>{{ product.title }}</h6>
@@ -51,9 +51,9 @@
                   class="price d-flex align-items-center flex-row align-self-end mt-2"
                 >
                   <span class="">{{ product.price }}</span>
-                  <h5 class="">
+                  <span class="">
                     {{ $t("currency") }}
-                  </h5>
+                  </span>
                 </div>
                 <button
                   @click="addToCart(product)"

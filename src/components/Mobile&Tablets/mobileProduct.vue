@@ -99,7 +99,7 @@
 import StarRating from "vue-star-rating";
 import axios from "axios";
 export default {
-  name: "Products-View",
+  name: "Mobile-View",
   computed: {},
   methods: {
     addCountity(product) {
@@ -118,7 +118,7 @@ export default {
     };
   },
   async mounted() {
-    axios.get(`products/${this.id}`).then((response) => {
+    axios.get(`mobile/${this.id}`).then((response) => {
       this.product = response.data;
     });
   },

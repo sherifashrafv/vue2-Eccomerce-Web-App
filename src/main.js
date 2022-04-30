@@ -17,27 +17,28 @@ import "vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css";
 import ViewUI from "view-design";
 import "view-design/dist/styles/iview.css";
 import VuePaginate from "vue-paginate";
-Vue.use(VuePaginate);
-Vue.use(ViewUI);
-
-// / baseUrl For Axios Get Products
+import VueMeta from "vue-meta";
 // document.documentElement.lang = lang;
 let lang = localStorage.getItem("lang") || "en";
 if (lang === "en") {
   import("../public/Styles/English/en.css");
+  // / baseUrl For Axios Get Products
   axios.defaults.baseURL = `http://localhost:5000/`;
 } else {
   import("../public/Styles/Arabic/ar.css");
+  // / baseUrl For Axios Get Products
   axios.defaults.baseURL = `http://localhost:7000/`;
 }
 axios.defaults.headers["Accept-Language"] = lang;
-// Cutsome layOuts
+// components&plugins
 Vue.component("custome-layout", Extend);
 Vue.component("default-layout", Default);
 Vue.use(VueImg);
 Vue.use(Vuelidate);
 Vue.use(PerfectScrollbar);
-
+Vue.use(VueMeta);
+Vue.use(VuePaginate);
+Vue.use(ViewUI);
 Vue.config.productionTip = false;
 
 new Vue({
